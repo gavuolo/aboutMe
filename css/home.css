@@ -108,25 +108,7 @@ h1{
     padding-left: 150px;
 }
 
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 15em;
-    }
-}
-
-@keyframes blink-bar {
-    from{
-        border-right-color: #FF5F5F;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-
-.box-left h1{
+.box-left span{
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
@@ -134,12 +116,26 @@ h1{
     margin-bottom: 20px;
     color: #FCFCFC;
     cursor: default;
+    max-width: 0;
+    width: max-content;
 
     /*animation*/
     white-space: nowrap;
     border-right: 2px solid #FF5F5F;
-    animation: blink-bar 500ms infinite normal, typing 4s steps(28) 1s normal;
+    animation: blink 500ms infinite normal, typing normal 5s steps(60) both;
     overflow: hidden;
+}
+
+@keyframes typing {
+    100%{
+        max-width: 100%;
+    }
+}
+
+@keyframes blink {
+    100%{
+        border-right-color: transparent;
+    }
 }
 .buttons{
     display: flex;

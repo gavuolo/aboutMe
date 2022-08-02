@@ -45,17 +45,8 @@
 
 li span{
     border-right: 2px solid #2C2C2C;
-    animation: blink-bar 500ms infinite normal, typing 4s steps(28) 1s normal;
+    animation: blink-bar 500ms infinite normal;
     overflow: hidden;
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 15em;
-    }
 }
 
 @keyframes blink-bar {
