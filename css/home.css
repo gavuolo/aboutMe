@@ -14,10 +14,16 @@ h1{
 
 .hidden{
     display: none;
-    transition: 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
-.transition{
-
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .click-topbar{
     color: #FF5F5F;

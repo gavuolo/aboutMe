@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/biomed.css">
 </head>
 <body>
     <header>
         <div class="top">
             <div class="top-bar">
+                <span onclick="menuClick(this)">Início</span>
                 <span onclick="menuClick(this)">Sobre</span>
                 <span onclick="menuClick(this)">Biomedicina</span>
                 <span onclick="menuClick(this)">Tecnologia</span>
@@ -28,9 +30,9 @@
                     <h2>Hey! me chamo</h1>
                     <h1>Gabriela Vuolo Oliveira</h2>
                     <div class="buttons">
-                        <button class="btn-6"><span>Linkedin</span></button>
-                        <button>Github</button>
-                        <button>Lattes</button>
+                        <button onclick="abrirLinkedin()"><span>Linkedin</span></button>
+                        <button onclick="abrirGitHub()">Github</button>
+                        <button onclick="abrirLattes()">Lattes</button>
                     </div>
                 </div>
                 <div class="box-right">
@@ -61,6 +63,21 @@
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <main class="biomed-main hidden">
+        <div class="box-icon-biomed">
+            <button>Lattes</button>
+            <button>Linkedin</button>
+        </div>
+    </main>
+
+    <main class="tech-main hidden">
+
+    </main>
+
+    <main class="contact-main hidden">
+
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
