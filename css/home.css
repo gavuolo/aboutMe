@@ -13,7 +13,9 @@ h1{
 }
 .hidden{
     display: none;
-    transition: opacity .3s;
+}
+.fadeIn{
+    animation: fadeIn 1s;
 }
 @keyframes fadeIn {
     from{
@@ -46,7 +48,6 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 .top-bar span{
     display: inline-block;
@@ -67,9 +68,9 @@ h1{
 .inside{
     width: 100%;
     height: 100%;
-    margin: 200px 0 auto;
     display: flex;
     align-items: center;
+    padding: 10%;
 }
 .box-inside{
     width: 100%;
@@ -86,14 +87,13 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .box-right{
     width: 40%;
     height: auto;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -104,21 +104,20 @@ h1{
     line-height: 28px;
     color: #83FFE6;
     cursor: default;
-    padding-left: 150px;
-    margin-left: 20%;
+    padding-left: 125px;
 }
 
 .box-left span{
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
-    padding-left: 150px;
+    padding-left: 125px;
     margin-bottom: 20px;
     color: #FCFCFC;
     cursor: default;
     max-width: 0;
     width: max-content;
-    margin-left: 20%;
+    /*margin-left: 20%;*/
 
     /*animation*/
     white-space: nowrap;
@@ -143,7 +142,6 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 20%;
     width: 100%;
 }
 .buttons button{
@@ -169,7 +167,7 @@ h1{
     transition: 500ms;
 }
 
-/*Box-right*/
+/*Box direita*/
 .background-img{
     background-color: #2C2C2C;
     border-radius: 100%;
