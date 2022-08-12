@@ -9,7 +9,15 @@ function abrirGitHub(){
 function abrirLattes(){
     window.open('http://lattes.cnpq.br/8480933251214361','_blank')
 }
+/*biomedicina*/
+function verFotos(){
+    let modal = document.querySelector('.window-hidden')
+    modal.classList.remove('hidden')
+    modal.classList.add('fadeIn')
+}
 
-
-
-
+function fecharJanela(elemento){
+    let modal = document.querySelector('.window-hidden');
+    modal.classList.add('hidden')
+        console.log(elemento.parentNode)
+}

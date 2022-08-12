@@ -14,7 +14,6 @@
     height: 200px;
     margin-bottom: 20px;
 }
-
 .box-icon-biomed{
     padding: 2%;
     display: flex;
@@ -23,6 +22,7 @@
     align-items: center;
     width: 30%;
     height: 100%;
+    
 }
 .border-div{
     /*border-right: 3px solid #83FFE6;*/
@@ -33,7 +33,6 @@
     position: sticky;
     top: 80px;    
 }
-
 .box-icon-biomed button{
     margin-bottom: 20px;
 }
@@ -43,8 +42,8 @@
     width: 70%;
     height: auto;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;   
+    justify-content: start;
+    flex-wrap: wrap;
 }
 .box-biomed{
     width: 400px;
@@ -55,7 +54,9 @@
     border-radius: 5%;
     overflow: auto;
     box-shadow:  3px 3px 3px #FF5F5F;
+    cursor: default;
 }
+
 
 .box-biomed h1{
     text-align: center;
@@ -66,14 +67,9 @@
 }
 
 /*scrollbar*/
-.box-biomed:hover {
-    
-    
-}
 .box-biomed::-webkit-scrollbar{
     width: 1em;
     border-radius: 50px;
-    
 }
 .box-biomed::-webkit-scrollbar-track{
     border-radius: 50px;
@@ -82,4 +78,67 @@
 .box-biomed::-webkit-scrollbar-thumb{
     background: #FF5F5F;
     border-radius: 50px;
+}
+
+/*Janela-modal com imagens*/
+.modal-window-box-biomed{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.window-box-biomed{
+    width: 60%;
+    min-width: 450px;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-window{
+    position: relative;
+    top: -290px;
+    right: -980px;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+}
+/*slide de fotos*/ 
+.window-box-biomed h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.window-box-biomed img{
+    max-width: 700px;
+    max-height: 500px;
+}
+.ionicon{
+    width: auto;
+    height: 50px;
+    background-color: #FF5F5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ionicon ion-icon{
+    width: 90px;
+}
+.ionicon:hover{
+    background-color: #83FFE6;
+    color: #FF5F5F;
+    border: none;
+    transition: 500ms;
 }
