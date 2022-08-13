@@ -16,7 +16,6 @@ function menuClick(div){
         mainInicio.classList.remove('hidden')
         mainInicio.classList.add('fadeIn')
         
-
         mainSobre.classList.add('hidden')
         mainBiomedicina.classList.add('hidden')
         mainTecnologia.classList.add('hidden')

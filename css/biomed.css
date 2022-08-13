@@ -4,30 +4,27 @@
     align-items: center;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
     height: auto;
 }
 
 /*box esquerda*/
+.box-icon-biomed{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
 .box-icon-biomed img{
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
 }
-.box-icon-biomed{
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    
-}
 .border-div{
-    /*border-right: 3px solid #83FFE6;*/
     width: 3px;
-    height: 400px;
+    height: 350px;
     background-color: #83FFE6;
     margin-right: 50px;
     position: sticky;
@@ -39,10 +36,10 @@
 
 /*box direita*/
 .box-content-biomed{
-    width: 70%;
+    width: 50%;
     height: auto;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .box-biomed{
@@ -56,14 +53,15 @@
     box-shadow:  3px 3px 3px #FF5F5F;
     cursor: default;
 }
-
-
 .box-biomed h1{
     text-align: center;
     margin-bottom: 20px;
 }
 .biomed-box p{
     line-height: 30px;
+}
+.box-biomed button{
+    margin-left: 80px;
 }
 
 /*scrollbar*/
@@ -84,8 +82,8 @@
 .modal-window-box-biomed{
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    top: 80px;
     right: 0;
     background-color: #00000080;
     display: flex;
@@ -94,22 +92,22 @@
 }
 .window-box-biomed{
     width: 60%;
-    min-width: 450px;
     min-height: 600px;
     background-color: #fff;
     border-radius: 20px;
     margin-top: 90px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .close-window{
-    position: relative;
-    top: -290px;
-    right: -980px;
+    position: absolute;
+    top: 80px;
+    right: 370px;
     width: 50px;
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
     border: 0;
     text-align: center;
@@ -122,22 +120,27 @@
 .window-box-biomed img{
     max-width: 700px;
     max-height: 500px;
+    width: 700px;
+    height: 500px;
 }
-.ionicon{
-    width: auto;
-    height: 50px;
-    background-color: #FF5F5F;
+.ionicon-left, .ionicon-right{
+    width: 100%;
+    height: 500px;
+    /*background-color: #FF5F5F;*/ 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
 }
-.ionicon ion-icon{
-    width: 90px;
+.ionicon-right{
 }
-.ionicon:hover{
-    background-color: #83FFE6;
+.ionicon-right ion-icon, .ionicon-left ion-icon{
+    width: 50px;
+    height: 50px;
+}
+.ionicon-left:hover, .ionicon-right:hover{
+    /*background-color: #83FFE6;*/
     color: #FF5F5F;
     border: none;
     transition: 500ms;
