@@ -2,11 +2,15 @@
     margin-top: 100px;
     display: flex;
     align-items: center;
+    justify-content: start;
     height: auto;
+    background-color: red;
 }
 .skills-tech{
     margin: 0 auto;
     color: #FCFCFC;
+    background-color: #FCFCFC;
+    
 }
 .skills-tech ion-icon{
     color: #FF5F5F;
